@@ -1,3 +1,5 @@
+/* @override http://localhost:4000/stylesheets/screen.css */
+
 /* @override http://127.0.0.1:4001/stylesheets/screen.css */
 
 /* @override https://dnrjowqmgw.localtunnel.me/stylesheets/screen.css */
@@ -23,6 +25,13 @@ p, li, dd, dt {
 	line-height: 1.5em;
 	max-width: 34em;
 	margin-bottom: 1em;
+}
+
+h1.page-title{
+	font-size: 36px;
+	font-weight: 600;
+	padding-top: 0.4em;
+	margin-bottom: 0.6em;	
 }
 
 div.wrapper{
@@ -58,6 +67,10 @@ body:not(:-moz-handler-blocked) fieldset {
   display: table-cell;
 }
 
+form footer{
+	margin-top: 2em;
+}
+
 input[type=tel],
 input[type=text],
 input[type=date],
@@ -89,7 +102,7 @@ input[type=checkbox]{
 .field-select select{
 	min-width: 0; 
 	background: none;
-	padding-right: 24px;
+	padding-right: 28px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: block;
@@ -132,7 +145,7 @@ button,
 	border: 1px solid;
 	color: #008c52;
 	font: inherit;
-	padding: 10px 12px;
+	padding: 9px 12px;
 	margin: 0;
 	line-height: 16px;	
 	cursor: pointer;
@@ -140,6 +153,17 @@ button,
 	border-radius: 3px;
 	display: inline-block;
 	vertical-align: middle;
+	margin-top: -3px;
+}
+
+.button.button--delete{ color: #cb1c2a; }
+.button.button--delete:hover{ 
+	background: #cb1c2a;
+	border-color: #cb1c2a;
+}
+
+.button.button--delete:active{
+	color: #df8a66; 
 }
 
 button:hover,
@@ -163,7 +187,12 @@ form a.a-return + h1{
 }
 
 div.field,
-fieldset{ margin-bottom: 24px; }
+fieldset{ 
+	margin-bottom: 24px; 
+	max-width: 40em;
+	width: 20em;
+}
+
 fieldset.fieldset-checkbox{ max-width: 512px;}
 
 fieldset.fieldset-corporate-official{ margin-bottom: 24px; }
@@ -433,7 +462,7 @@ p.introduction {
 	color: #404040;
 }
 
-@media screen and (min-width: 568.88px){ p.introduction { line-height: 1.6em; } }
+@media screen and (min-width: 568.88px){ p.introduction { line-height: 1.5em; } }
 
 figure{
 	margin-top: 2.4em;
@@ -562,9 +591,7 @@ figure img{
 	margin-bottom: 24px;
 }
 
-.topics-new a.a-back{
-	margin-top: 16px;
-}
+
 
 
 /* @end */
@@ -603,7 +630,7 @@ figure img{
 	color: #555;
 }
 
-.stakeholders dd{
+.associations dd{
 	margin-left: 2em;
 	margin-bottom: 0.4em;
 	font-size: 16px;
@@ -612,7 +639,7 @@ figure img{
 	color: #333;
 }
 
-.stakeholders dt{
+.associations dt{
 	padding-right: 96px;	
 	position: relative;
 	padding-top: 12px;
@@ -631,6 +658,106 @@ figure img{
 /* @end */
 
 /* @group layouts */
+
+/* @group layout-settings */
+
+.layout-settings nav{
+	margin-bottom: 1em;
+}
+
+.layout-settings nav ol::before{
+	content: "On this page: ";
+	margin-right: 0.4em;
+}
+
+.layout-settings nav ol li{
+	list-style-type: none;
+	display: inline;
+	margin-right: 0.4em;
+}
+
+.layout-settings nav ol li a{ color: #555;}
+.layout-settings nav ol li a:hover{ color: #222;}
+
+.layout-settings .types dl dt,
+.layout-settings .types dl dd,
+.layout-settings .topics ul li,
+.layout-settings .stakeholders ul li{
+	width: 40em;
+	padding-top: 0.4em;
+	margin: 0;
+}
+
+.layout-settings .types dl dt,
+.layout-settings .topics ul li,
+.layout-settings .stakeholders ul li{
+	border-top: 1px solid #eee;
+}
+
+.layout-settings .types dl dd,
+.layout-settings .topics ul li,
+.layout-settings .stakeholders ul li{
+	padding-bottom: 0.4em;	
+}
+
+.layout-settings .types dl dt{ font-weight: 600; color: #444;}
+.layout-settings ul li{
+	position: relative;
+	padding-right: 3em;
+}
+
+.layout-settings ul li a{
+	position: absolute;
+	right: 0;
+}
+
+.layout-settings section{
+	margin-bottom: 1em;
+}
+.layout-settings section h1{
+	font-size: 24px;
+	font-family: Playfair Display, PT Serif;
+	line-height: 24px;
+	font-weight: 600;
+	margin-bottom: 16px;
+	color: #d26f00;
+	display: inline-block;
+}
+
+.layout-settings section h1+a{
+	padding: 0.5em 0.5em;
+	font-size: 16px;
+	margin-left: 0.4em;
+	margin-top: -4px;
+}
+
+.layout-settings section p{
+	font-family: pt serif;
+	font-size: 17px;
+}
+
+.layout-settings .blank-slate{
+	background: #eee;
+	padding: 0.4em 0.8em;
+	border-radius: 6px;
+	margin-bottom: 1em;
+	max-width: 34em;
+}
+
+.layout-settings .blank-slate p:last-child{ margin-bottom: 0;}
+
+.layout-settings .associations .field,
+.layout-settings .associations footer{
+	display: inline-block;
+	margin-left: 0.2em;
+}
+.layout-settings .associations .field span.label-text{
+	position: absolute;
+	left: -9999em;
+}
+
+
+/* @end */
 
 /* @group layout-homepage */
 

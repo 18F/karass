@@ -1,0 +1,32 @@
+---
+title: New association
+body-class: associations-new
+---
+
+<a href="/settings#associations" class="a-back">&larr; Back to settings</a>
+
+<form action="/settings#associations">
+  <h1>New association for [stakeholder]</h1>
+  <div class="field field-select">
+    <label>
+      <span class="label-text">What <strong>content type or topic</strong> should be associated with [stakeholder]?</span>
+      <select>
+        <optgroup label="Content types">
+          <option></option>
+        </optgroup>
+      </select>
+    </label>
+  </div>
+    <div class="field field-select">
+    <label>
+      <span class="label-text">What <strong>role</strong> will [stakeholder]'s play in relationship to the content being created?</span>
+      <select>
+        <option>Collaborator</option>
+        <option>Approver</option>
+      </select>
+    </label>
+  </div>
+  <footer>
+    <button>Add association</button>
+  </footer>
+</form>
