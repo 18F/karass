@@ -844,6 +844,19 @@ figure img{
 	left: -9999em;
 }
 
+abbr{
+	background: #e16749;
+	color: #fff;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	text-align: center;
+	line-height: 20px;
+	border-radius: 100%;
+	font-size: 14px;
+	font-weight: 600;
+}
+
 
 /* @end */
 
