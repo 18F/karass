@@ -173,7 +173,8 @@ input[type=checkbox]{
 	content: "";
 	border: 6px solid black;
 	position: absolute;
-	right: 10px;
+	left: 20em;
+	margin-left: -22px;
 	bottom: 7px;
 	margin-bottom: 2px;
 	border-color: #aaa transparent transparent transparent;
@@ -243,8 +244,10 @@ div.field,
 fieldset{ 
 	margin-bottom: 24px; 
 	max-width: 40em;
-	width: 20em;
 }
+
+div.field input,
+div.field.field-select select{ max-width: 20em; }
 
 fieldset.fieldset-checkbox{ max-width: 512px;}
 
@@ -830,6 +833,12 @@ figure img{
 	display: inline-block;
 	margin-left: 0.2em;
 }
+
+.layout-settings .associations .field.field-select::after{
+	left: auto;
+	right: 8px;
+}
+
 .layout-settings .associations .field span.label-text{
 	position: absolute;
 	left: -9999em;
