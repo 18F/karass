@@ -1,3 +1,5 @@
+/* @override https://pages-internal.18f.gov/karass/stylesheets/screen.css */
+
 /* @override http://127.0.0.1:4000/stylesheets/screen.css */
 
 /* @override http://127.0.0.1:4000/stylesheets/screen.css */
@@ -243,6 +245,7 @@ form a.a-return + h1{
 div.field,
 fieldset{ 
 	max-width: 40em;
+	margin-bottom: 1.4em;
 }
 
 div.field input,
@@ -312,6 +315,10 @@ div.field.field-radio input{
 	padding-left: 24px;
 	padding-bottom: 12px;
 	display: block;
+}
+
+.fieldset-checkbox div.field.field-checkbox:last-of-type label{
+	padding-bottom: 0;
 }
 
 .field.field-checkbox input{ 
@@ -474,26 +481,17 @@ div.field-iaa-number input[type=text]{
 
 /* @group section.section-form */
 
-section{
-	padding-top: 18px;
-	counter-increment: section;
-	position: relative;
-}
-
-section.section-form:first-of-type{ counter-reset: section; }
-
 section h1 {
 	font-size: 24px;
 	font-family: Playfair Display, PT Serif;
 	line-height: 32px;
 	font-weight: 600;
+	margin-top: 24px;
 	margin-bottom: 12px;
 	color: #d26f00;
 }
 
-section em{
-	font-style: italic;
-}
+section em{ font-style: italic; }
 
 /* @end */
 
@@ -505,7 +503,6 @@ section em{
 p.introduction {
 	font-family: Source Sans Pro, sans;
 	font-size: 21px;
-	font-weight: 30000;
 	line-height: 1.4em;
 	max-width: 38em;
 	margin-bottom: 0.8em;
@@ -515,9 +512,12 @@ p.introduction {
 @media screen and (min-width: 568.88px){ 
 	p.introduction { 
 		font-size: 24px;
-		font-weight: 300;
-		color: #111;
+		color: #484848;
 	} 
+	
+	p.introduction a{
+	display: inline-block; 
+	}
 }
 
 figure{
