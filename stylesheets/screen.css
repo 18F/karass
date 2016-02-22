@@ -844,7 +844,7 @@ figure img{
 	left: -9999em;
 }
 
-abbr{
+abbr.badge{
 	background: #e16749;
 	color: #fff;
 	width: 20px;
@@ -855,6 +855,10 @@ abbr{
 	border-radius: 100%;
 	font-size: 14px;
 	font-weight: 600;
+}
+
+abbr.badge.badge-collaborator{
+	background: #94a100;
 }
 
 
