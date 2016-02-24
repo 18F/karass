@@ -717,11 +717,10 @@ figure img{
 
 /* @group layouts */
 
-/* @group layout-sign-in */
+/* @group layout-sign-in, layout-access-denied */
 
-.layout-sign-in{ border-top: 2px solid #eee; }
-
-.layout-sign-in .wrapper{ 
+.layout-sign-in .wrapper,
+.layout-access-denied .wrapper{ 
 	margin-top: 2em;
 	max-width: 32em;
 	text-align: center;
@@ -731,9 +730,8 @@ figure img{
 }
 
 .layout-sign-in .wrapper p{ margin-bottom: 1.4em; }
+.layout-access-denied .wrapper p:last-of-type{ margin-bottom: 0; }
 .layout-sign-in .wrapper p a{ color: #555; }
-.layout-sign-in .wrapper .a-sign-in {
-}
 
 /* @end */
 
