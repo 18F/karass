@@ -1,3 +1,5 @@
+/* @override http://localhost:4000/stylesheets/screen.css */
+
 /* @override https://pages-internal.18f.gov/karass/stylesheets/screen.css */
 
 /* @override http://127.0.0.1:4000/stylesheets/screen.css */
@@ -714,6 +716,26 @@ figure img{
 /* @end */
 
 /* @group layouts */
+
+/* @group layout-sign-in */
+
+.layout-sign-in{ border-top: 2px solid #eee; }
+
+.layout-sign-in .wrapper{ 
+	margin-top: 2em;
+	max-width: 32em;
+	text-align: center;
+	border: 1px solid #eee;
+	padding: 1em 2em 2em;
+	border-radius: 6px;
+}
+
+.layout-sign-in .wrapper p{ margin-bottom: 1.4em; }
+.layout-sign-in .wrapper p a{ color: #555; }
+.layout-sign-in .wrapper .a-sign-in {
+}
+
+/* @end */
 
 /* @group layout-settings */
 
