@@ -1,17 +1,5 @@
 /* @override http://localhost:4000/stylesheets/screen.css */
 
-/* @override https://pages-internal.18f.gov/karass/stylesheets/screen.css */
-
-/* @override http://127.0.0.1:4000/stylesheets/screen.css */
-
-/* @override http://127.0.0.1:4000/stylesheets/screen.css */
-
-/* @override http://localhost:4000/stylesheets/screen.css */
-
-/* @override http://127.0.0.1:4001/stylesheets/screen.css */
-
-/* @override https://dnrjowqmgw.localtunnel.me/stylesheets/screen.css */
-
 /* @group bootstrap */
 
 body{
@@ -27,6 +15,7 @@ a:hover{ color: #003c72; }
 	color: #555;
 	font-size: 14px;
 	display: block;
+	margin-bottom: 1em;
 }
 
 a[href^="https://18f.slack.com"]::before{
@@ -214,7 +203,10 @@ button,
 	margin-top: -3px;
 }
 
-.button.button--delete{ color: #cb1c2a; }
+.button.button--delete{ 
+	color: #cb1c2a; 
+	float: right;
+}
 .button.button--delete:hover{ 
 	background: #cb1c2a;
 	border-color: #cb1c2a;
@@ -814,14 +806,13 @@ figure img{
 
 .layout-settings .blank-slate{
 	background: #f8f8f8;
+	color: #333;
+	font-style: italic;
+	font-size: 14px;
 	border: 1px solid #e8e8e8;
-	border-right-color: #e0e0e0;
-	border-bottom-color: #e0e0e0;
-	box-shadow: 1px 1px 0 2px #fafafa, inset 1px 1px 0 #fff;
 	padding: 0.4em 0.8em;
-	border-radius: 6px;
+	border-radius: 3px;
 	margin-bottom: 1em;
-	max-width: 34em;
 }
 
 .layout-settings .blank-slate p:last-child{ margin-bottom: 0;}
@@ -843,20 +834,24 @@ figure img{
 }
 
 abbr.badge{
-	background: #e16749;
-	color: #fff;
-	width: 20px;
-	height: 20px;
+	background: #eee;
+	border: 1px solid #d3d3d3;
+	color: #555;
+	width: 16px;
+	height: 16px;
 	display: inline-block;
+	vertical-align: middle;
 	text-align: center;
-	line-height: 20px;
+	line-height: 13px;
+	text-indent: 1px;
 	border-radius: 100%;
-	font-size: 14px;
-	font-weight: 600;
+	font-size: 11px;
+	font-family: Verdana;
+	margin-right: 0.2em;
 }
 
-abbr.badge.badge-collaborator{
-	background: #94a100;
+abbr.badge.badge--collaborator{
+	text-indent: 0;
 }
 
 
@@ -868,6 +863,48 @@ abbr.badge.badge-collaborator{
 	background: #19c5fe;
 	
 }
+
+/* @end */
+
+/* @group .layout-topics-edit */
+
+.layout-topics-edit section h2,
+.layout-topics-edit section ul,
+.layout-topics-edit section li,
+.layout-stakeholders-edit section h2,
+.layout-stakeholders-edit section ul{
+	font: inherit;
+	color: inherit;
+	display: inline;
+	margin: 0;
+}
+
+.layout-stakeholders-edit section::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.layout-stakeholders-edit section h2,
+.layout-stakeholders-edit section ul,
+.layout-stakeholders-edit section ul li{ 
+	float: left; 
+	margin-bottom: 0.2em;
+	margin-right: 0.2em;
+	line-height: 1.4em;
+}
+
+.layout-stakeholders-edit section h2{ 
+	clear: left; 
+}
+
+.layout-topics-edit section h2::after,
+.layout-stakeholders-edit section h2::after{ content: ": "; }
+
+.layout-topics-edit section li::after,
+.layout-stakeholders-edit section li::after{ content: ", "; }
+.layout-topics-edit section li:last-child::after,
+.layout-stakeholders-edit section li:last-child::after{ content: "";}
 
 /* @end */
 

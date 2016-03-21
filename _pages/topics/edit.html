@@ -1,0 +1,26 @@
+---
+title: Edit topic
+body-class: layout-topics-edit
+
+---
+
+<a href="{{site.baseurl}}/settings/#topics" class="a-back">&larr; Back to settings</a>
+<h1 class="page-title">Edit Topic</h1>
+<form>          
+  <div class="field">
+    <label>
+      <span class="label-text">Name</span>
+      <input type="text" value="Agile BPA" required> 
+    </label>
+  </div>
+  <section class="stakeholders">
+    <h1>Associated stakeholders</h1>
+    <ul>
+      <li>Dave Zvenyach <abbr class="badge" title="Approver">A</abbr></li>
+    </ul>
+  </section>
+  <footer>
+    <button type="submit">Edit topic</button>  
+    <button class="button button--delete" type="submit">Delete topic</button>  
+  </footer>
+</form>

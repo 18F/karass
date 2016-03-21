@@ -1,0 +1,45 @@
+---
+title: Edit stakeholder
+body-class: layout-stakeholders-edit
+
+---
+
+<a href="{{site.baseurl}}/settings/#stakeholders" class="a-back">&larr; Back to settings</a>
+
+<form action="/">
+  <h1 class="page-title">Edit stakeholder</h1>
+  <div class="field">
+    <label>
+      <span class="label-text">Name</span>
+      <input type="text" value="Dave Zvenyach" required> 
+    </label>
+  </div>
+  <div class="field">
+    <label>
+      <span class="label-text">Email</span>
+      <input type="email" value="dave.zvenyach@gsa.gov" required> 
+    </label>
+  </div>
+  <div class="field">
+    <label>
+      <span class="label-text">Org / role</span>
+      <input type="text" value="Business Owner, Acquisitions" required> 
+    </label>
+  </div>
+  <section class="associations">
+    <h1>Associations</h1>
+    <h2>Types</h2>
+    <ul>
+      <li>Blog post <abbr class="badge badge--collaborator" title="collaborator">C</abbr></li>
+    </ul>
+    <h2>Topics</h2>
+    <ul>
+      <li>The Agile BPA <abbr class="badge" title="approver">A</abbr></li>
+      <li>Something else <abbr class="badge" title="approver">A</abbr></li>
+    </ul>
+  </section>
+  <footer>
+    <button class="button button--new">Edit stakeholder</button>
+    <button class="button button--delete">Delete stakeholder</button>  
+  </footer>
+</form>
